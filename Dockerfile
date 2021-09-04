@@ -35,4 +35,6 @@ RUN curl -o /usr/local/bin/gpm -sSL "https://github.com/zlepper/gpm/releases/dow
     chmod +x /usr/local/bin/gpm
 
 RUN curl -o /usr/local/bin/gfs -sSL "https://github.com/zlepper/gfs/releases/download/0.0.4/gfs-linux-x64" && \
-    chmod +x /usr/local/bin/gfs 
+    chmod +x /usr/local/bin/gfs
+
+CMD ["docker-entrypoint.sh"]
